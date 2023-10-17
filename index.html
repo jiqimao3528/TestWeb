@@ -20,7 +20,7 @@
 				}
 				function sendMessageToCSharp(type) {
 					console.log(type)
-				    window.vuplex.postMessage({ type: 'greeting', message: 'Hello from JavaScript!' });
+				    window.vuplex.postMessage({ hjEventName: 'H5ProjectReady' });
 				}
 				$('.btn').click(function(){
 					sendMessageToCSharp(1)
