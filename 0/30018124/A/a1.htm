@@ -1,0 +1,107 @@
+﻿
+<HTML><HEAD><title>k、b的符号与直线的关系</title>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<META name=GENERATOR content="Microsoft FrontPage 4.0">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="commom.css">
+<link rel="stylesheet" href="/font/stylesheet.css" type="text/css" charset="utf-8" />
+</HEAD>
+<BODY style=" height: 1000px;">
+<h1 class="fill">(填空题)</h1>
+<div class="back">
+
+<P style="TEXT-ALIGN: left" class=MsoNormal align=left><font><font face="Times New Roman"><SPAN 
+lang=EN-US>①</SPAN></font>当<SPAN   
+lang=EN-US><img src="image027.gif" 
+width=35 height=19></SPAN>，<SPAN 
+lang=EN-US><img src="image038.gif" 
+width=35 height=19></SPAN>时，直线经过第<input type="text" size="4" id="Ask0" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask1" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask2" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">象限，如图<font face="Times New Roman"><SPAN 
+lang=EN-US>(1)</SPAN></font>所示．</font></P>
+<P style="TEXT-ALIGN: left" class=MsoNormal align=left><font><font face="Times New Roman"><SPAN 
+style="font-family: 宋体" lang=EN-US>②</SPAN></font>当<SPAN  
+lang=EN-US><img src="image027.gif" 
+width=35 height=19></SPAN>，<SPAN 
+lang=EN-US><img src="image039.gif" 
+width=35 height=19></SPAN>时，直线经过第<input type="text" size="4" id="Ask3" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask4" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask5" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">象限，如图<font face="Times New Roman"><SPAN 
+lang=EN-US>(2)</SPAN></font>所示．</font></P>
+<P style="TEXT-ALIGN: left" class=MsoNormal align=left><font><font face="Times New Roman"><SPAN 
+style="font-family: 宋体" lang=EN-US>③</SPAN></font>当<SPAN  
+lang=EN-US><img src="image028.gif" 
+width=35 height=19></SPAN>，<SPAN 
+lang=EN-US><img src="image038.gif" 
+width=35 height=19></SPAN>时，直线经过第<input type="text" size="4" id="Ask6" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask7" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask8" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">象限，如图<font face="Times New Roman"><SPAN 
+lang=EN-US>(3)</SPAN></font>所示．</font></P>
+<P style="TEXT-ALIGN: left" class=MsoNormal align=left><font><font face="Times New Roman"><SPAN 
+style="font-family: 宋体" lang=EN-US>④</SPAN></font>当<SPAN  
+lang=EN-US><img src="image028.gif" 
+width=35 height=19></SPAN>，<SPAN 
+lang=EN-US><img src="image039.gif" 
+width=35 height=19></SPAN>时，直线经过第<input type="text" size="4" id="Ask9" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask10" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">、<input type="text" size="4" id="Ask11" onkeyup="keyUp(this)" onfocus="focusFunc(this)" onblur="blurFunc(this)">象限，如图<font face="Times New Roman"><SPAN 
+lang=EN-US>(4)</SPAN></font>所示．</font></P>
+<P style="TEXT-ALIGN: center" class=MsoNormal align=center><SPAN lang=EN-US><font><img src="image040.jpg" 
+width=412 height=118></font></SPAN></P>
+
+</div>
+</BODY>
+<script src="jquery-1.9.1.min.js"></script>
+
+<script language="javascript">
+	var myarrAns = new Array("一|1","二|2","三","一","三","四","一","二","四","二","三","四");
+	var myarrAsk = new Array("1","2","1","1","1","1","1","1","1","1","1","1");
+	//多空，每空一个答案
+
+	function focusFunc(obj){
+		return
+		$(obj).css({background:"#eafafb",border:"1pt solid #000",color:"#000"});
+	}
+	function blurFunc(obj){
+		return
+		var val = $(obj).val();
+		if(val != ""){
+			$(obj).css({background:"#eafafb",border:"1pt solid #000",color:"#000"});
+		}else{
+			$(obj).css({background:"#fff",border:"1pt solid #999",color:"#333"});
+		}
+	}
+	function keyUp(obj){
+		return
+		var val = $(obj).val();
+		var arr = [" "];
+		for(var i = 0;i < val.length;i ++){
+			if($.inArray(val[i],arr) != -1){
+				val = val.substr(0,val.length-1)
+			}
+		}
+		$(obj).val(val);
+		
+	}
+
+	function focusFunc(obj){
+		$(obj).css({background:"#eafafb",border:"1pt solid #000",color:"#000"});
+	}
+	function blurFunc(obj){
+		return
+		var val = $(obj).val();
+		if(val != ""){
+			$(obj).css({background:"#eafafb",border:"1pt solid #000",color:"#000"});
+		}else{
+			$(obj).css({background:"#fff",border:"1pt solid #999",color:"#333"});
+		}
+	}
+	function keyUp(obj){
+		return
+		var val = $(obj).val();
+		var arr = [" "];
+		for(var i = 0;i < val.length;i ++){
+			if($.inArray(val[i],arr) != -1){
+				val = val.substr(0,val.length-1)
+			}
+		}
+		$(obj).val(val);
+		
+	}
+</script>
+<script src="test.js"></script>
+</html>

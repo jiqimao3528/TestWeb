@@ -1,0 +1,16 @@
+body,p,ul,li,h1,h2,h3,h4,h5,h6,ol,dl,dd,form,input{margin:0;padding:0;list-style:none;font-weight:normal;}
+img{border:none;}
+a{color:#666;text-decoration:none;cursor:pointer;}
+
+input{width:75pt;height:25pt;border:1pt solid #999;margin:0 5pt;text-align:center;
+	line-height:25pt;outline:none;color:#333;font-size:15pt;}
+p,span{color:#FFF;font-size:15pt;line-height:30pt;}
+
+.fill{color:#06b0b9;font-size:15pt;margin:22pt 0;font-weight:normal;
+	padding-left:12pt;}
+/* .back{background:#f3f3f3;padding:12pt;border-top:1pt solid #ddd;} */
+
+
+
+
+

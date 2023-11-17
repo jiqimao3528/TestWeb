@@ -1,0 +1,292 @@
+body{
+	margin:10;
+	font:"宋体";
+	font-size:14px;
+	color:#000000;
+	/* background-color: #FFFFFF;	 */
+	
+}
+td{
+        font-size:14px;
+}
+p {
+	line-height: 28px;
+}
+img{
+	vertical-align:middle;
+}
+.blank {text-decoration:none;
+	font-size:14px;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000; 
+	border-left:1px solid #000000; 
+	border-right:1px solid #000000;
+	color:#FF0000;
+	/* background-color:#CEE3CE; */
+	vertical-align:middle;
+	cursor:hand;
+}
+.char {
+	font-size:28px;
+}/* 
+	body{
+		margin:10pt;
+		font:"";
+		font-size:14pt;
+		line-height: 22pt;
+		color:#000000;
+		background-color: #FFFFFF;	
+	}
+	
+	p {
+		line-height: 22pt;
+		text-indent: 2em;
+		margin:0;
+	} */
+	
+	A:link,A:visited ,A:active {
+		font-size:14pt;
+		color:#ff0000;
+		text-decoration : none;
+		font-family: "";
+		font-weight: bold;
+	}
+	A:hover {
+		text-decoration : none; 
+		position : relative; 
+		color:#ff9900;
+		top : 2pt;	
+	}
+	
+	.redtxt{
+		font:"";
+		font-size:14pt;
+		color:#ff0000;
+		line-height:22pt;
+	}
+	
+	.txt{
+		font:"";
+		font-size:14pt;
+		color:#000000;
+		line-height:22pt;
+	}
+	
+	.tnr{
+		font-size:16pt;
+		line-height:22pt;
+		font-family: "Times New Roman", Times, serif;
+		font-style: italic;
+	}
+	
+	.tnr1{
+		font-size:16pt;
+		line-height:22pt;
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+	}
+	
+	.tnr2{
+		font-size:16pt;
+		line-height:22pt;
+		font-family: "Times New Roman", Times, serif;
+		font-style: normal;
+		text-decoration: underline;
+	}
+	
+	.ipa{
+		font-size:16pt;
+		line-height:22pt;
+		font-family: "Ipa-samd Uclphon1 SILDoulosL";
+		font-style: normal;
+	}
+	
+	.txt1{
+		font:"";
+		font-size:14pt;
+		color:#000000;
+		line-height:30pt;
+	}
+	
+	.bluetxt{
+		font-size:14pt;
+		color:#0000ff;
+		line-height:22pt;
+		font-family: "";
+	}
+	
+	.boldtxt{
+		font:"";
+		font-size:14pt;
+		color:#000000;
+		line-height:22pt;
+		font-weight:bold;
+	}
+	
+	.zzd{
+		font-size:14pt;
+		color:#000000;
+		line-height:22pt;
+		font-weight:bold;
+		background-image: url(zzd.gif);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		font-family: "";
+	}
+	
+	.zzd2{
+		font-size:14pt;
+		color:#000000;
+		line-height:22pt;
+		font-weight:bold;
+		background-image: url(zzd2.gif);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		font-family: "";
+	}
+	
+	.boldtxt2 {
+		font-family: "";
+		font-size: 14pt;
+		font-weight: bold;
+		color: #000000;
+		text-decoration: underline;
+	}
+	
+	.boldblue {
+		font-size: 14pt;
+		line-height: 22pt;
+		font-weight: bold;
+		color: #333399;
+		text-decoration: none;
+	}
+	
+	
+	.bigredtxt {
+		font-size:14pt;
+		color:#CC0000;
+		line-height:22pt;
+		font-family: "";
+		font-weight: bold;
+	}
+	
+	.greentxt {
+		font-family: "";
+		font-size: 14pt;
+		line-height: 22pt;
+		color: #009933;
+	}
+	
+	img{
+		vertical-align:middle;
+	}
+	#image{
+		vertical-align:middle;
+	}
+	
+	table {
+		font-size: 14pt;
+		border:thin;
+		border-collapse:collapse; 
+	}
+	.tb {
+		border:solid 1pt #000000;
+	}
+	.tb td {
+		border:solid 1pt #000000;
+		padding: 8pt;
+		font-family: "";
+		font-size: 14pt;
+		line-height: 22pt;
+	}
+	.zypyyb {
+		font-family: zypyyb;
+		font-size: 16pt;
+		line-height: 22pt;
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	
+	
+	
+	/* yang 11-11*/
+	.fl {
+	    float: left
+	}
+	
+	.fr {
+	    float: right
+	}
+	
+	.al {
+	    text-align: left
+	}
+	
+	.ac {
+	    text-align: center
+	}
+	
+	.ar {
+	    text-align: right
+	}
+	
+	.hide {
+	    display: none
+	}
+	
+	.clearfix:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden
+	}
+	
+	.clearfix {
+	    *zoom: 1
+	}
+	
+	/* 单选题 */
+	body{ margin: 0; }
+	.singleP{  text-indent: 0; padding:22pt 12pt; font-weight: normal; font-size:15pt;  color:#fff; line-height: 20pt;}
+	.subject{ padding:5pt 12pt;  }
+	.boldtxt{ font-size: 15pt; }
+	.question{ color:#06b0b9; margin-right: 5pt; font-weight: normal; }
+	.topicOption{  overflow: hidden;}
+	.topicOption>p{ display: block;  overflow: hidden; text-indent: 0; padding-top: 7.5pt; margin: 0;}
+	.topicOption>p>b{ display: block; width: calc(100% - 35pt - 15pt); font-weight: normal; float: left; line-height: 20pt; margin-top: 7.5pt;}
+	.topicOption>p>input{ float: left; margin-right: 12pt; }
+	.zzd{ font-size:15pt; }
+	.answer{width:35pt;height:35pt; color: #333;  border: 1pt solid #999; cursor:pointer;text-align:center;line-height:35pt;border-radius:50%;outline:none;  font-size: 15pt;}
+	/* .answer.nor{ background: #fff; } */
+	.answer.hot{ background: #06b0b9; color: #fff;  border: 0;}
+	.answer.correct{ background: #06b0b9; color: #fff; border: 0;  }
+	.answer.error{background: #ff798f; color: #fff; border: 0; }
+/*滚动条样式*/
+  ::-webkit-scrollbar {
+  	width: 8px;
+  	height: 4px;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+  	background: rgba(0, 0, 0, .1);
+  	-webkit-border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+  	height: 4px;
+  	background-color: #04e7f7;
+  	-webkit-border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical:hover {
+  	background-color: #B0C4C5f;
+  }
+
+  ::-webkit-scrollbar-thumb:horizontal {
+  	width: 4px;
+  	-webkit-box-shadow: inset 0 0 5px #04e7f7;
+  	background-color: #B0C4C5;
+  	-webkit-border-radius: 8px;
+  }
