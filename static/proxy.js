@@ -3,7 +3,7 @@ var proStyle = 2 //题型
 var inputArr = $('input')
 var myarrAnsArr = [];
 var answer = []
-var time=0
+var time = 0
 var selectAnswer = [] //选择题答案
 
 if (proStyle == 2) {
@@ -15,7 +15,7 @@ if (proStyle == 2) {
 	}
 }
 
-$('.answer').click(function() {
+$('.answer').click(function () {
 	if (proStyle == 3) {
 		console.log($(this).val())
 		if ($(this).hasClass('correct')) {
@@ -67,24 +67,24 @@ function submitFn() {
 			$(inputArr[inputIndex]).css('background-color', '#ccc')
 			$(inputArr[inputIndex + 1]).removeAttr('disabled')
 			$(inputArr[inputIndex + 1]).css('background-color', '#fff')
-			OnBlanksSubmit(inputIndex, $(inputArr[inputIndex]).val(),1);
+			OnBlanksSubmit(inputIndex, $(inputArr[inputIndex]).val(), 1);
 			inputIndex = inputIndex + 1
 			console.log('还有题')
 			return
 		} else { //最后一道
 			console.log('最后一道题,没题了')
-			OnBlanksSubmit(inputIndex, $(inputArr[inputIndex]).val(),2);
+			OnBlanksSubmit(inputIndex, $(inputArr[inputIndex]).val(), 2);
 		}
 	}
 }
 
-function OnBlanksSubmit(index, answerVal,type) {
+function OnBlanksSubmit(index, answerVal, type) {
 	clearInterval(timeType)
 	console.log(myarrAns) //答案
 	console.log(myarrAsk) //几个答案
 	console.log(index, answerVal) //第几空和输入的答案
 	var answerType = 0
-	
+
 	if (myarrAsk[index] == 1) {
 		myarrAns[index] = myarrAns[index].split("|");
 		if (myarrAns[index].length > 1) { //一空多个答案
@@ -106,10 +106,10 @@ function OnBlanksSubmit(index, answerVal,type) {
 				console.log('第' + index + '错误')
 			}
 		}
-		parent.parentSubmit(answerType,type)
+		parent.parentSubmit(answerType, type)
 	} else {
 		if (myarrAnsArr.length <= 0) {
-			myarrAnsArr = myarrAns[0].split('|')
+			myarrAnsArr = myarrAns[index].split('|')
 		}
 		for (var i = 0; i < myarrAnsArr.length; i++) {
 			if (myarrAnsArr[i] == answerVal) {
@@ -120,7 +120,7 @@ function OnBlanksSubmit(index, answerVal,type) {
 				break
 			}
 		}
-		parent.parentSubmit(answerType,type)
+		parent.parentSubmit(answerType, type)
 		// if (answerType == 1) {
 		// 	parent.parentSubmit('1',type)
 		// 	console.log('答对了！！')
@@ -132,7 +132,7 @@ function OnBlanksSubmit(index, answerVal,type) {
 	}
 }
 
-var timeType=setInterval(()=>{
+var timeType = setInterval(() => {
 	time++
 	console.log(time)
 }, 1000);
